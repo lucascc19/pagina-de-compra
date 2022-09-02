@@ -1,0 +1,23 @@
+@import "style.css";
+
+.text-expand {
+    margin-bottom: 8px;
+}
+
+#arrow-down img {
+    width: 14px;
+    height: 8px;
+    margin-right: 6px;
+}
+
+#btnReadMore{
+    display: inline;
+    font: var(--body-font-three) var(--body-font);
+    color: var(--body-color-three);
+    cursor: pointer;
+}
+
+#more {
+    display: block;
+    margin-bottom: 8px;
+}

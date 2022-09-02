@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Scripts -->
+    <script defer src="readMore.js"></script>
+
+    <!-- Nome da página -->
     <title>Abook | O Diário de Anne Frank</title>
     <!-- ícone apresentado na aba do navegador -->
     <link rel="icon" href="./assets/logo.ico">
@@ -14,7 +19,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -62,13 +67,12 @@
                 </div>
             </div>
             <div class="synopsis">
-                <p>
+                <p class="text-expand">
                     O diário de Anne Frank, o depoimento da pequena Anne, morta pelos nazistas após passar anos escondida no sótão de uma casa em Amsterdã, ainda hoje emociona leitores no mundo inteiro. Suas anotações narram os sentimentos, os medos e as pequenas alegrias de uma menina judia que, como sua família, lutou em vão para sobreviver ao Holocausto.
                 </p>
-                <br>
-                <p>
-                    Uma poderosa lembrança dos horrores de uma guerra, um testemunho eloquente do espírito humano. Assim podemos descrever os relatos feitos por Anne em seu diário.
-                </p>
+                <span id="arrow-down"><img src="./assets/arrow-down.svg" alt="leia mais"></span><span id="more">Uma poderosa lembrança dos horrores de uma guerra, um testemunho eloquente do espírito humano. Assim podemos descrever os relatos feitos por Anne em seu diário. Isolados do mundo exterior, os Frank enfrentaram a fome, o tédio e a terrível realidade do confinamento.
+                </span>
+                <p onclick="readMore()" id="btnReadMore">Leia Mais</p>
             </div> 
         </section>
 
@@ -107,8 +111,5 @@
             </div>
         </section>
     </main>
-
-
 </body>
-
 </html>
