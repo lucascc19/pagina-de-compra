@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* VARIABLES */
+:root {
+    font-size: 100%;
+
+    /* HSL color mode */
+    --text-color-one: #0F1111;
+    --text-color-two: #707373;
+    --body-color-one: #3A6775;
+    --body-color-two: #F6CA2D;
+    --body-color-three: #007FBA;
+    --body-color-four: #B12704;
+    --body-color-five: #319031;
+    /* Fonts */
+    --title-font-size: 2rem;
+    --body-font-one: 1rem;
+    --body-font-two: 600 1rem;
+    --body-font-three: 0.875rem;
+
+    --title-font: 'Lato', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+.title {
+    font: var(--title-font-size) var(--title-font);
+    color: var(--text-color-one);
+    /*-webkit-font-smoothing: auto;*/
+}
+
+body {
+    font: var(--body-font-one) var(--body-font);
+    color: var(--text-color-one);
+    background: white;
+    /*---webkit-font-smoothing: antialiased;*/
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background: var(--body-color-two);
+    padding-right: 8.4375rem;
+    padding-left: 8.4375rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 90px;
+    height: 60px;
+}
+
+.user {
+    display: flex;
+    align-items: flex-start;
+}
+
+.user a{
+    font: 600 var(--body-font-three) var(--body-font);
+    color: var(--text-color-one);
+}
+
+.user img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.shopping-cart {
+    width: 24px;
+    height: 24px;
+}
+
+main {
+    padding-top: 40px;
+    padding-left: 8.4375rem;
+    padding-right: 8.4375rem;
+    display: flex;
+}
+
+/* SECTION-1 */
+.book-cover{
+    margin-right: 40px;
+}
+
+.book-cover img{
+    width: 250px;
+    height: 375px;
+}
+
+.book-cover .profile {
+    width: 50px;
+    height: 50px;
+}
+
+.author {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font: var(--body-font-two) var(--body-font);
+}
+
+.author-profile{
+    display: flex;
+}
+
+.author-profile a {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+/* SECTION-2 */
+.book-description {
+    margin-right: 40px;
+}
+.book-description .title {
+    margin-bottom: 10px;
+}
+.book-description .star {
+    margin-top: 8px;
+    margin-bottom: 15px;
+    width: 80px;
+    height: 20px;
+}
+
+.book-description .formats {
+    font: var(--body-font-three) var(--body-font); 
+    color: var(--body-color-three);
+    margin-bottom: 10px;
+}
+
+.button {
+    display: flex;
+}
+
+.option-btn {
+    width: 150px;
+    height: 62px;
+    border: 1px solid var(--text-color-two);
+    border-radius: 4px;
+    background: none;
+    text-align: start;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.option-btn p {
+    font: var(--body-font-one);
+}
+
+.option-btn span {
+    font: var(--body-font-secondary);
+    color: var(--text-color-two);
+}
+
+.synopsis {
+    width: 400px;
+}
+
+/* SECTION-3 */
+.value-description {
+    padding: 20px;
+
+    border: 4px solid rgba(112, 115, 115, 0.5);
+    border-radius: 6px;
+}
+
+.value-description .value{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.value-description .value {
+    font: var(--body-font-two) var(--body-font);
+}
+
+.value-description .value span {
+    color: var(--body-color-four);
+}
+
+.value-description .free-delivery {
+    margin-bottom: 14px;
+}
+
+.value-description #address {
+    display: flex;
+    align-items: center;
+    font: var(--body-font-three) var(--body-font);
+    color: var(--body-color-three);
+}
+
+.value-description #address img {
+    width: 15px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.value-description #inventory {
+    color: var(--body-color-five);
+}
+
+.value-description .button-purchase {
+    display: flex;
+    flex-direction: column;
+}
+
+.value-description button {
+    height: 32px;
+    border: none;
+    border-radius: 40px;
+
+    background: var(--body-color-two);
+    font: var(--body-font-three) var(--body-font);
+}
+
+.value-description button a {
+    color: var(--text-color-one);
+}
+
+.value-description button:last-child {
+    background: #FA8900;
+}
+
+.value-description #privacy {
+    display: flex;
+    align-items: center;
+    font: var(--body-font-three) var(--body-font);
+    color: var(--body-color-three);
+}
+
+.value-description #privacy img {
+    width: 15px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.value-description #sent {
+    display: flex;
+    justify-content: space-between;
+    font: var(--body-font-three) var(--body-font);
+}
+
+.value-description #sent p:first-child {
+    color: var(--text-color-two);
+}
+
+.value-description #sold {
+    display: flex;
+    justify-content: space-between;
+    font: var(--body-font-three) var(--body-font);
+}
+
+.value-description #sold p:first-child {
+    color: var(--text-color-two);
+}

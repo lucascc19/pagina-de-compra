@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abook | O Diário de Anne Frank</title>
+    <!-- ícone apresentado na aba do navegador -->
+    <link rel="icon" href="./assets/logo.ico">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header id="header">
+        <!-- Elementos clicáveis -->
+        <nav class="container">
+            <img  class="logo" src="./assets/logo.svg" alt="Logo da Abook">
+            <div class="search-box">
+                <input type="text" class="search-text" placeholder="Pesquisar">
+                <a class="search-btn" href="#"></a>
+            </div>
+            <div class="user">
+                <img src="./assets/user.svg" alt="foto do usuário">
+                <div class="login">
+                    <p>Olá, bem-vindo(a)!</p>
+                    <p><a href="#">Entre</a> ou <a href="#">Cadastre-se</a></p>
+                </div>
+            </div>
+            <img class="shopping-cart" src="./assets/shopping-cart.svg" alt="carrinho">
+        </nav>
+    </header>
+    <main>
+        <section class="book-cover">
+            <img src="./assets/capa-diario_anne.png" alt="Capa do livro">
+            <p class="author">Autora</p>
+            <div class="author-profile">
+                <img class="profile" src="./assets/autora-prefil.svg" alt="Perfil da autora">
+                <a href="#">Anne Frank</a>
+            </div>
+        </section>
+    
+        <section class="book-description">
+            <h1 class="title">O diário de Anne Frank</h1>
+            <p>Edição em Português</p>
+            <img class="star" src="./assets/star.svg" alt="">
+            <p class="formats">Formatos disponíveis</p>
+            <div class="button">
+                <div class="option-btn">
+                    <p>Audiobook</p>
+                    <span>R$ 9,90</span>
+                </div>
+                <div class="option-btn">
+                    <p>Capa Comum</p>
+                    <span>R$ 29,90</span>
+                </div>
+            </div>
+            <div class="synopsis">
+                <p>
+                    O diário de Anne Frank, o depoimento da pequena Anne, morta pelos nazistas após passar anos escondida no sótão de uma casa em Amsterdã, ainda hoje emociona leitores no mundo inteiro. Suas anotações narram os sentimentos, os medos e as pequenas alegrias de uma menina judia que, como sua família, lutou em vão para sobreviver ao Holocausto.
+                </p>
+                <br>
+                <p>
+                    Uma poderosa lembrança dos horrores de uma guerra, um testemunho eloquente do espírito humano. Assim podemos descrever os relatos feitos por Anne em seu diário.
+                </p>
+            </div> 
+        </section>
+
+        <section class="value-description">
+            <div class="value">
+                <p>Valor total</p>
+                <span>R$ 29,90</span>
+            </div>
+            <p class="free-delivery"><font color= "#007FBA">Entrega GRÁTIS</font>: <b>Terça-feira, 6 de Setembro</b> no seu primeiro pedido</p>
+            <p class="free-delivery">Ou entrega mais rápida: <b>Amanhã, 30 de Agosto.</b></p>
+            <div id="address" class="free-delivery">
+                <img src="./assets/map-pin.svg" alt="lupa-localização">
+                <p>Seleciona o endereço</p>
+            </div>
+            <p id="inventory" class="value">Produto em estoque</p>
+            <p class="free-delivery">Como alternativa, o eBook Kindle já está disponível e você pode iniciar sua leitura com os Apps gratuitos de leitura Kindle.</p>
+            <div class="button-purchase">
+                <button class="free-delivery">
+                    <a href="#">Adicionar ao carrinho</a>
+                </button>
+                <button class="free-delivery">
+                    <a href="#">Comprar agora</a>
+                </button>
+            </div>
+            <div id="privacy" class="free-delivery">
+                <img src="./assets/lock.svg" alt="Cadeado">
+                <p>Transação segura</p>
+            </div>
+            <div id="sent" class="free-delivery">
+                <p>Enviado por</p>
+                <p>Abook.com.br</p>
+            </div>
+            <div id="sold">
+                <p>Vendido por</p>
+                <p>Abook.com.br</p>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
