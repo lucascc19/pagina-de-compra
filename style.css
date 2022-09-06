@@ -77,6 +77,10 @@ nav {
     align-items: flex-start;
 }
 
+.user .user-login {
+    display: flex;
+}
+
 .user a{
     font: 600 var(--body-font-three) var(--body-font);
     color: var(--text-color-one);
@@ -89,8 +93,9 @@ nav {
 }
 
 .shopping-cart {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
+    margin-left: 80px;
 }
 
 main {
